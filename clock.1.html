@@ -1,0 +1,26 @@
+<html>
+        <head>
+            <title>HTML Page</title>
+            <link rel="stylesheet" href="styles/mystyle.css"/>
+        </head>
+        <body>
+            <div>
+                <h2 id="message">Some Content</h2>
+                <button onclick="reverse()">Reverse the Message</button>
+            </div>
+            <div></div>
+            <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+            <script>
+                function reverse(){
+                    // console.log('click event captured')
+                    // var content = document.getElementById('message').innerHTML
+                    // var revContent = content.split('').reverse().join('');
+                    // document.getElementById('message').innerHTML = revContent
+
+                    // var revContent = 
+                    $('#message').html($('#message').html().split('').reverse().join(''))
+                   
+                }
+            </script>
+        </body>
+        </html>
